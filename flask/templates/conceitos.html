@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="imagex/png" href="{{ url_for('static', filename='Imagens/logo1.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='conceitos.css') }}">
+    <script src="{{ url_for('static', filename='js/conceitos.js') }}" defer></script>
+    <title>Conceitos</title>
+</head>
+<body>
+    <div class="mobile">
+
+        <div class="menu-icon" onclick="menu()">
+            <img src="{{ url_for('static', filename='Imagens/menu.svg') }}" id="imgMenu" alt=""></div>
+
+            <div class="lista-mobile">
+                <ul>
+                    <li><a href="{{ url_for('bd') }}">Banco de Dados</a></li>
+                    <li><a href="{{ url_for('alunos') }}">Alunos</a></li>
+                    <li><a href="{{ url_for('conceitos') }}">Conceitos</a></li>
+                    <li><a href="{{ url_for('cadastro') }}">Cadastro</a></li>
+                    <li><a href="{{ url_for('listar_passagens') }}">Listagem</a></li>
+                </ul>
+            </div>
+            <div class="container-mobile">
+                
+            </div>
+        </div>
+    
+    
+    
+    
+        <div class="desktop">
+            <div class="top-desktop">
+                <ul>
+                    <li><a href="{{ url_for('bd') }}">Banco de Dados</a></li>
+                    <li><a href="{{ url_for('alunos') }}">Alunos</a></li>
+                    <li><a href="{{ url_for('conceitos') }}">Conceitos</a></li>
+                    <li><a href="{{ url_for('cadastro') }}">Cadastro</a></li>
+                    <li><a href="{{ url_for('listar_passagens') }}">Listagem</a></li>
+                </ul>
+            </div>
+
+            <div class="container-desktop">
+
+
+                <div class="box-desktop full-width">
+                    <h2>Versão mobile e desktop</h2>
+                    <p>Nossa versão mobile utiliza um design responsivo e tem como características um menu de navegação oculto que é ativado por um ícone de menu, um formulário de cadastro otimizado para telas menores, tendo os elementos de entrada mais compactos e um layout na vertical e tudo isso com um estilo e layout próprio para dispositivos móveis, tornando a experiência de navegar em nosso site mais agradável.</p>
+                    <p>Nossa versão Desktop é projetada para dispositivos de telas maiores e tem como características uma barra de navegação que fornece os links para você pode acessar outras páginas, como nesse caso, você pode ir da página conceitos para o cadastro clicando na barra acima, nosso formulário tem elementos de entrada mais amplos, se adequando para telas maiores.</p>
+                </div>
+    
+                <div class="box-desktop">
+                    <h2>Flask</h2>
+                    <p>O Flask é um framework web em Python e serve para criar aplicativos web. No nosso código, ele é utilizado para definir as rotas, renderizar os templates e interagir com o banco de dados.</p>
+                </div>
+    
+                
+    
+                <div class="box-desktop">
+                    <h2>Media Queries</h2>
+                    <p>Em ambas as versões foi utilizado o media Queries no CSS, que garante a adaptação em diferentes tamanhos de tela.</p>
+                </div>
+    
+                <div class="box-desktop">
+                    <h2>Dark mode</h2>
+                    <p>Nossa página "cadastro" em sua versão Desktop conta com uma botão com a funcionalidade de ativar o modo escuro, sua funcionalidade é dada através do JavaScript.</p>
+                </div> 
+                
+                <img class="logo-mobile" src="../Imagens/logo1.png" alt="">
+            </div>
+    <        

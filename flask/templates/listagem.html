@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="imagex/png" href="{{ url_for('static', filename='Imagens/logo1.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='listagem.css') }}">
+    <script src="{{ url_for('static', filename='js/listagem.js') }}" defer></script>
+    <title>Listagem de Passagens</title>
+</head>
+<body>
+    <div class="mobile">
+        <div class="menu-mobile">
+            <div class="menu-icon" onclick="menu()">
+                <img src="{{ url_for('static', filename='Imagens/menu.svg') }}" id="imgMenu" alt=""></div>
+    
+            <div class="lista-mobile">
+                <ul>
+                    <li><a href="{{ url_for('bd') }}">Banco de Dados</a></li>
+                    <li><a href="{{ url_for('alunos') }}">Alunos</a></li>
+                    <li><a href="{{ url_for('conceitos') }}">Conceitos</a></li>
+                    <li><a href="{{ url_for('cadastro') }}">Cadastro</a></li>
+                    <li><a href="{{ url_for('listar_passagens') }}">Listagem</a></li>
+                </ul>
+            </div>
+        </div>
+        
+    
+        <div class="container-mobile">
+            <table class="tabela">
+                
+                <thead>
+                    <tr>
+                        <th>Id da passagem</th>
+                        <th>Data de ida</th>
+                        <th>Data de volta</th>
+                        <th>Id de origem</th>
+                        <th>Id de destino</th>
+                        <th>Duração</th>
+                        <th>Id da classe do voo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for passagem in passagens %}
+                        <tr>
+                            <td>{{ passagem.idpassagem }}</td>
+                            <td>{{ passagem.data_ida }}</td>
+                            <td>{{ passagem.data_volta }}</td>
+                            <td>{{ passagem.idorigem }}</td>
+                            <td>{{ passagem.iddestino }}</td>
+                            <td>{{ passagem.duracao }}</td>
+                            <td>{{ passagem.idclassevoo }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+
+    <div class="desktop">
+        <div class="top-desktop">
+            <ul>
+                <li><a href="{{ url_for('bd') }}">Banco de Dados</a></li>
+                <li><a href="{{ url_for('alunos') }}">Alunos</a></li>
+                <li><a href="{{ url_for('conceitos') }}">Conceitos</a></li>
+                <li><a href="{{ url_for('cadastro') }}">Cadastro</a></li>
+                <li><a href="{{ url_for('listar_passagens') }}">Listagem</a></li>
+            </ul>
+        </div>
+    
+        <div class="container-desktop">
+            <table class="tabela">
+                
+                <thead>
+                    <tr>
+                        <th>Id da passagem</th>
+                        <th>Data de ida</th>
+                        <th>Data de volta</th>
+                        <th>Id de origem</th>
+                        <th>Id de destino</th>
+                        <th>Duração</th>
+                        <th>Id da classe do voo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for passagem in passagens %}
+                        <tr>
+                            <td>{{ passagem.idpassagem }}</td>
+                            <td>{{ passagem.data_ida }}</td>
+                            <td>{{ passagem.data_volta }}</td>
+                            <td>{{ passagem.idorigem }}</td>
+                            <td>{{ passagem.iddestino }}</td>
+                            <td>{{ passagem.duracao }}</td>
+                            <td>{{ passagem.idclassevoo }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    
+</body>
+</html>

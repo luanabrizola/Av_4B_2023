@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --top-text-color: rgb(255, 255, 255);
+    --top-color: rgb(47, 59, 162);
+    --fundo-color: rgb(207, 207, 207);
+}
+
+.mobile{
+    display: flex;
+    font-family:'Poppins', sans-serif;
+    width: 100%;
+    height: 100%;
+    font-size: 1.rem;
+}
+
+.menu-icon{
+    position: fixed;
+    width: 100%;
+    height: 10%;
+    background-color: var(--top-color);
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-end;
+}
+
+.menu-icon img {
+    width: 20px;
+    margin: 5px;
+}
+
+.lista-mobile{
+    width: 100%;
+    height: 90%;
+    top: 10%;
+    left: -100%;
+    transition: 0.4s;
+    background-color:var(--top-color);
+    position: fixed;
+}
+
+.lista-mobile a{
+    text-decoration: none;
+    color: var(--top-text-color);
+    font-size: 15px;
+
+}
+
+.lista-mobile ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    height: 100%;
+    
+}

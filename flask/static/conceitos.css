@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --top-text-color: rgb(255, 255, 255);
+    --top-color: rgb(47, 59, 162);
+    --fundo-color: rgb(207, 207, 207);
+    --color-box-table: #4f8699;
+}
+
+.mobile{
+    display: flex;
+    font-family:'Poppins', sans-serif;
+    width: 100%;
+    height: 100%;
+    font-size: 1.rem;
+}
+
+.menu-icon{
+    position: fixed;
+    width: 100%;
+    height: 10%;
+    background-color: var(--top-color);
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-end;
+}
+
+.menu-icon img {
+    width: 20px;
+    margin: 5px;
+}
+
+.lista-mobile{
+    width: 100%;
+    height: 90%;
+    top: 10%;
+    left: -100%;
+    transition: 0.4s;
+    background-color:var(--top-color);
+    position: fixed;
+}
+
+.lista-mobile a{
+    text-decoration: none;
+    color: var(--top-text-color);
+    font-size: 15px;
+
+}
+
+.lista-mobile ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    height: 100%;
+    
+}
+
+/* Desktop*/
+
+
+.desktop{
+    width: 100%;
+    height: 100%;
+    display: none;
+    font-family: 'Poppins', sans-serif;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.top-desktop a{
+    text-decoration: none;
+    color: var(--top-text-color);
+    font-size: 20px;
+}
+
+.top-desktop ul{
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    list-style: none;
+    column-gap: 10px;
+    margin-right: 10px;
+}
+
+.top-desktop{
+    display: block;
+    position: fixed;
+    background-color: var(--top-color);
+    color: var(--top-text-color);
+    height: 10%;
+    width: 100%;
+    top:0px;
+}
+
+.container-desktop {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 20px auto;
+    margin-top: 100px;
+}
+
+.box-desktop {
+    width: 380px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    background-color: var(--color-box-table);
+    margin-bottom: 20px;
+
+}
+
+.box-desktop.full-width {
+    width: 100%;
+}
+
+h2 {
+    color: white;
+}
+
+p {
+    color: #ffffff;
+}
+
+.logo-desktop{
+    
+    display: block;
+    margin: 0 auto;
+    
+}
+
+@media screen and (min-width: 760px){
+    .mobile {
+        display: none;
+    }
+
+    .menu-mobile{
+        display: none;
+    }
+
+    .desktop{
+        display: block;
+    }
+}

@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root{
+    --top-text-color: rgb(255, 255, 255);
+    --top-color: rgb(47, 59, 162);
+    --fundo-color: rgb(207, 207, 207);
+    --cinza-escuro-color: rgb(127, 124, 124);
+    --preto-color: rgb(4, 4, 4);
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    color: var(--top-color);
+    text-align: center;
+}
+
+.mobile {
+    /* display: flex; */
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    height: 100%;
+    font-size: 1.rem;
+}
+
+.menu-icon {
+    position: fixed;
+    width: 100%;
+    height: 10%;
+    background-color: var(--top-color);
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-end;
+    z-index: 1;
+}
+
+.menu-icon img {
+    width: 20px;
+    margin: 5px;
+}
+
+.lista-mobile {
+    width: 100%;
+    height: 90%;
+    top: 10%;
+    left: -100%;
+    transition: 0.4s;
+    background-color: var(--top-color);
+    position: fixed;
+    z-index: 1;
+}
+
+.lista-mobile a {
+    text-decoration: none;
+    color: var(--top-text-color);
+    font-size: 15px;
+}
+
+.lista-mobile ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    height: 100%;
+
+}
+
+.container-mobile{
+    display: flex;
+    height: 800px;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('../static/imagens/aviao.jpg');
+}
+
+.container-mobile h1{
+    margin-top: 10%;
+}
+
+
+
+
+
+
+
+.desktop{
+    width: 100%;
+    height: 100%;
+    display: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.top-desktop a{
+    text-decoration: none;
+    color: var(--top-text-color);
+    font-size: 20px;
+}
+
+.top-desktop ul{
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    list-style: none;
+    column-gap: 10px;
+    margin-right: 10px;
+}
+
+.top-desktop{
+    display: block;
+    position: fixed;
+    background-color: var(--top-color);
+    color: var(--top-text-color);
+    height: 10%;
+    width: 100%;
+}
+
+.container-desktop{
+    display: flex;
+    margin-top: 4.5%;
+    height: 800px;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('../static/imagens/aviao.jpg');
+}
+
+h1{
+    margin-bottom: 10px;
+    margin-top: 30px;
+    color: var(--preto-color);
+    /* text-align: center; */
+}
+
+
+@media screen and (min-width: 760px) {
+    .mobile {
+        display: none;
+    }
+
+    .desktop{
+        display: flex;
+    }
+}
+
+

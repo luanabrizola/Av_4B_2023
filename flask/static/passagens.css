@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root{
+    --top-text-color: rgb(255, 255, 255);
+    --top-color: rgb(47, 59, 162);
+    --fundo-color: rgb(207, 207, 207);
+    --cinza-escuro-color: rgb(127, 124, 124);
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.tabela{
+    border: 1px solid black;
+}
+
+.tabela th, .tabela td {
+    border: 1px solid black;
+    padding: 1px;
+}
+
+.desktop{
+    /* background-image: url(../Imagens/nordeste-praias-bonitas.jpg); */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+}
+
+.top-desktop a{
+    text-decoration: none;
+    color: var(--top-text-color);
+    font-size: 20px;
+}
+
+.top-desktop ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    column-gap: 10px;
+    margin-right: 10px;
+}
+
+.top-desktop{
+    display: block;
+    position: relative;
+    background-color: var(--top-color);
+    color: var(--top-text-color);
+    height: 10%;
+    width: 100%;
+    /* z-index: 2; */
+}
+
+.container-desktop{
+    display: flex;
+    margin-top: 1%;
+    width: 100%;
+    height: 90%;
+    justify-content: space-around;
+    /* z-index: 1; */
+}
+
+.container-desktop ul{
+    list-style: none;
+}
+
+/* h1{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-bottom: 10px;
+} */

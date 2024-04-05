@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --top-text-color: rgb(255, 255, 255);
+    --top-color: rgb(47, 59, 162);
+    --fundo-color: rgb(207, 207, 207);
+}
+
+.mobile{
+    display: flex;
+    font-family:'Poppins', sans-serif;
+    width: 100%;
+    height: 100%;
+    font-size: 1.rem;
+}
+
+.menu-icon{
+    position: fixed;
+    width: 100%;
+    height: 10%;
+    background-color: var(--top-color);
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-end;
+
+}
+
+.menu-icon img {
+    width: 20px;
+    margin: 5px;
+}
+
+.lista-mobile{
+    width: 100%;
+    height: 90%;
+    top: 10%;
+    left: -100%;
+    transition: 0.4s;
+    background-color:var(--top-color);
+    position: fixed;
+}
+
+.lista-mobile a{
+    text-decoration: none;
+    color: var(--top-text-color);
+    font-size: 15px;
+
+}
+
+.lista-mobile ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    height: 100%;
+    
+}
+.container-mobile{
+    display: flex;
+    margin-top: 10%;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    
+}
+
+.Defendi-mobile{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+    background-color: var(--fundo-color);
+    border-radius: 15px;
+    height: 50%;
+    width: 90%;
+}
+
+.Menegasso-mobile{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+    background-color: var(--fundo-color);
+    border-radius: 15px;
+    height: 50%;
+    width: 90%;
+    
+}
+
+.Brizola-mobile{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+    background-color: var(--fundo-color);
+    border-radius: 15px;
+    height: 50%;
+    width: 90%;
+}
+
+.img-foto-mob{
+    display: flex;
+    flex-direction: row;
+}
+
+.redes-sociais{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.foto-mobile{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.insta-mobile{
+    width: 25px;
+    height: 25px;
+}
+
+.git-mobile{
+    width: 25px;
+    height: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+/* DESKTOP */
+
+
+
+.desktop{
+    /* background-image: url(../Imagens/nordeste-praias-bonitas.jpg); */
+    width: 100%;
+    height: 100%;
+    display: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.top-desktop a{
+    text-decoration: none;
+    color: var(--top-text-color);
+    font-size: 20px;
+}
+
+.top-desktop ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    column-gap: 10px;
+    margin-right: 10px;
+}
+
+.top-desktop{
+    display: block;
+    position: fixed;
+    background-color: var(--top-color);
+    color: var(--top-text-color);
+    height: 10%;
+    width: 100%;
+}
+
+.container-desktop{
+    display: flex;
+    margin-top: 8%;
+    margin-bottom: 4%;
+    width: 100%;
+    /* height: 90%; */
+    justify-content: space-around;
+}
+
+.container-desktop ul{
+    list-style: none;
+}
+
+.Defendi-desktop{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--fundo-color);
+    border-radius: 15px;
+    height: 650px;
+    width: 30%;
+}
+
+.insta-desktop{
+    width: 50px;
+    height: 50px;
+}
+
+.git-desktop{
+    width: 50px;
+    height: 50px;
+}
+
+.Menegasso-desktop{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--fundo-color);
+    border-radius: 15px;
+    height: 100%;
+    width: 30%;
+}
+
+.Brizola-desktop{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--fundo-color);
+    border-radius: 15px;
+    height: 100%;
+    width: 30%;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.foto-desktop{
+    width: 50%;
+    height: 30%;
+    border-radius: 50%;
+}
+
+
+
+@media screen and (min-width: 760px){
+    .mobile{
+        display: none;
+    }
+
+    .desktop{
+        display: flex;
+    }
+}
+

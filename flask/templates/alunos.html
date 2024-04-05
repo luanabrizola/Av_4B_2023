@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='alunos.css') }}">
+    <link rel="shortcut icon" type="imagex/png" href="{{ url_for('static', filename='Imagens/tampao-de-alunos.png') }}">
+    <script src="{{ url_for('static', filename='js/alunos.js') }}" defer></script>
+    <title>Alunos</title>
+</head>
+<body>
+    <div class="mobile">
+
+        <div class="menu-icon" onclick="menu()">
+            <img src="{{ url_for('static', filename='Imagens/menu.svg') }}" id="imgMenu" alt=""></div>
+
+        <div class="lista-mobile">
+            <ul>
+                <li><a href="{{ url_for('bd') }}">Banco de Dados</a></li>
+                <li><a href="{{ url_for('alunos') }}">Alunos</a></li>
+                <li><a href="{{ url_for('conceitos') }}">Conceitos</a></li>
+                <li><a href="{{ url_for('cadastro') }}">Cadastro</a></li>
+                <li><a href="{{ url_for('listar_passagens') }}">Listagem</a></li>
+            </ul>
+        </div>
+
+        <div class="container-mobile">
+            <div class="Defendi-mobile">
+                <p>Ana Julia Defendi</p>
+                <p>RA: a2440946</p>
+                <div class="img-foto-mob"><img class="foto-mobile" src="{{ url_for('static', filename='Imagens/defendi.png') }}" alt="">
+                    <div class="redes-sociais">
+                        <a href="https://www.instagram.com/anajuliadefendi/"><img class="insta-mobile" src="{{ url_for('static', filename='Imagens/instagram.png') }}" alt=""></a>
+                        <a href="https://github.com/defendii"><img class="git-mobile" src="{{ url_for('static', filename='Imagens/github.png') }}" alt=""></a>
+                    </div>
+                </div>
+                <p>Faço TIII (Técnico Integrado em Informática para a Internet) na Universidade Tecnológica Federal do Paraná e estou cursando a disciplina Desenvolvimento Web I do 2° Ano, com o professor Rafael Liberato, que me fez aprender a desenvolver sites. Tenho 16 anos, minha cor favorita é rosa e moro em Araruna-Pr.</p>
+            </div><br><br>
+
+
+            <div class="Menegasso-mobile">
+                <p>Ana Julia Menegasso</p>
+                <p>RA: a2461226</p>
+                <div class="img-foto-mob"><img class="foto-mobile" src="{{ url_for('static', filename='Imagens/anajuli.png') }}" alt="">
+                    <div class="redes-sociais">
+                        <a href="https://www.instagram.com/anajuliamcruz/"><img class="insta-mobile" src=".{{ url_for('static', filename='Imagens/instagram.png') }}" alt=""></a>
+                        <a href="https://github.com/AnaJuliaMC"><img class="git-mobile" src="{{ url_for('static', filename='Imagens/github.png') }}" alt=""></a>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, nemo tenetur nulla iure animi officia ipsum non, aliquam praesentium at cum sed expedita enim quisquam? Rem id blanditiis aperiam magni!</p>
+            </div><br><br>
+
+
+            <div class="Brizola-mobile">
+                <p>Luana Brizola</p>
+                <p>RA: a2441080</p>
+                <div class="img-foto-mob"><img class="foto-mobile" src="{{ url_for('static', filename='Imagens/luana.jpg') }}" alt="">
+                    <div class="redes-sociais">  
+                        <a href="https://www.instagram.com/luanabrizolaa/"><img class="insta-mobile" src="{{ url_for('static', filename='Imagens/instagram.png') }}" alt=""></a>
+                        <a href="https://github.com/luanabrizola"><img class="git-mobile" src="{{ url_for('static', filename='Imagens/github.png') }}" alt=""></a>
+                    </div>
+                </div>
+                <p>Olá, meu nome é Luana Rodrigues Brizola, tenho 17 anos e atualmente curso o Ensino Médio Técncio da UTFPR e estou no 2º ano. Sou tricolor de coração, amo o meu São Paulo que é o atual campeão da Copa do Brasil. </p>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="desktop">
+        <div class="top-desktop">
+            <ul>
+                <li><a href="{{ url_for('bd') }}">Banco de Dados</a></li>
+                <li><a href="{{ url_for('alunos') }}">Alunos</a></li>
+                <li><a href="{{ url_for('conceitos') }}">Conceitos</a></li>
+                <li><a href="{{ url_for('cadastro') }}">Cadastro</a></li>
+                <li><a href="{{ url_for('listar_passagens') }}">Listagem</a></li>
+            </ul>
+        </div>
+        <div class="container-desktop">
+            <div class="Defendi-desktop">
+                <h2>Ana Julia Defendi</h2>
+                <ul>
+                    <li>RA: a2440946</li>
+                </ul>
+                <img class="foto-desktop" src="{{ url_for('static', filename='Imagens/defendi.png') }}" alt=""> <br>
+
+                <div>
+                    <p>Faço TIII (Técnico Integrado em Informática para a Internet) na Universidade Tecnológica Federal do Paraná e estou cursando a disciplina Desenvolvimento Web I do 2° Ano, com o professor Rafael Liberato, que me fez aprender a desenvolver sites. Tenho 16 anos, minha cor favorita é rosa e moro em Araruna-Pr.</p>
+                </div> <br>
+
+                <div>
+                    <a href="https://../www.instagram.com/anajuliadefendi/"><img class="insta-desktop" src="{{ url_for('static', filename='Imagens/instagram.png') }}" alt=""></a>
+                    <a href="https://github.com/defendii"><img class="git-desktop" src="{{ url_for('static', filename='Imagens/github.png') }}" alt=""></a>
+                </div>
+                
+            </div>
+            
+            <div class="Menegasso-desktop">
+                <h2>Ana Julia Menegasso</h2>
+                <p>RA: a2461226</p>
+                <img class="foto-desktop" src="{{ url_for('static', filename='Imagens/anajuli.png') }}" alt=""> <br>
+
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore provident repudiandae eveniet consequatur repellendus dolore voluptates consequuntur eligendi architecto error incidunt deleniti aspernatur, animi nihil obcaecati? Totam vero accusantium nobis?</p>
+                </div> <br>
+
+                <div>
+                    <a href="https://www.instagram.com/anajuliamcruz/"><img class="insta-desktop" src="{{ url_for('static', filename='Imagens/instagram.png') }}" alt=""></a>
+                    <a href="https://github.com/AnaJuliaMC"><img class="git-desktop" src="{{ url_for('static', filename='Imagens/github.png') }}" alt=""></a>
+                </div>
+                
+            </div>
+            <div class="Brizola-desktop">
+                <h2>Luana Brizola</h2>
+                <p>RA: a2441080</p>
+                <img class="foto-desktop" src="{{ url_for('static', filename='Imagens/luana.jpg') }}" alt=""> <br>
+
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore provident repudiandae eveniet consequatur repellendus dolore voluptates consequuntur eligendi architecto error incidunt deleniti aspernatur, animi nihil obcaecati? Totam vero accusantium nobis?</p>
+                </div> <br>
+
+                <div>  
+                    <a href="https://www.instagram.com/luanabrizolaa/"><img class="insta-desktop" src="{{ url_for('static', filename='Imagens/instagram.png') }}" alt=""></a>
+                    <a href="https://github.com/luanabrizola"><img class="git-desktop" src="{{ url_for('static', filename='Imagens/github.png') }}" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --top-text-color: rgb(255, 255, 255);
+    --top-color: rgb(47, 59, 162);
+    --fundo-color: rgb(207, 207, 207);
+    --cinza-escuro-color: rgb(127, 124, 124);
+    --top-color-dark: #1b263b;
+    --fundo-color-dark: #0d1b2a
+}
+
+.mobile{
+    display: flex;
+    font-family:'Poppins', sans-serif;
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+}
+
+.menu-icon{
+    width: 100%;
+    height: 10%;
+    background-color: var(--top-color);
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-end;
+    position: fixed;
+}
+
+.menu-icon img {
+    width: 20px;
+    margin: 5px;
+}
+
+.lista-mobile{
+    width: 100%;
+    height: 90%;
+    top: 10%;
+    position: fixed;
+    left: -100%;
+    transition: 0.4s;
+    background-color:var(--top-color);
+    z-index: 10;
+}
+
+.lista-mobile a{
+    text-decoration: none;
+    color: var(--top-text-color);
+    font-size: 15px;
+
+}
+
+.lista-mobile ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    height: 100%;
+    
+}
+
+.container-mobile{
+    display: flex;
+    margin-top: 4.5%;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-mobile input{
+    width: 200px;
+    border-radius: 5px;
+    border: none;
+    height: 20px;
+}
+
+.cor-mobile{
+    width: 300px;
+    height: 800px;
+    background-color: var(--fundo-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    border-radius: 10px;
+}
+
+.botoes-mobile{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+h1{
+    font-size: 20px;
+}
+
+.logo-mobile{
+    width: 80px;
+    height: 80px;
+}
+
+.select-mobile{
+    color: var(--cinza-escuro-color);
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 20px;
+    background-color: var(--top-text-color);
+}
+
+button{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--top-color);
+    color: var(--top-text-color);
+    border: none;
+    border-radius: 5px;
+    width: 90px;
+    height: 50px;
+}
+
+
+
+
+
+/* DESKTOP */
+
+
+
+.desktop{
+    width: 100%;
+    height: 100%;
+    display: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.top-desktop a{
+    text-decoration: none;
+    color: var(--top-text-color);
+    font-size: 20px;
+}
+
+.top-desktop ul{
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    list-style: none;
+    column-gap: 10px;
+    margin-right: 10px;
+}
+
+.top-desktop{
+    display: block;
+    position: fixed;
+    background-color: var(--top-color);
+    color: var(--top-text-color);
+    height: 10%;
+    width: 100%;
+    transition: .5s;
+}
+
+.trilho{
+    width: 100px;
+    height: 50px;
+    background-color: var(--cinza-escuro-color);
+    border-radius: 150px;
+    position: relative;
+}
+
+.trilho .indicador{
+    background-color: var(--fundo-color);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    transform: scale(.9);
+    position: absolute;
+    left: 0;
+    transition: .5s;
+}
+
+.trilho.dark{
+    background-color: var(--fundo-color);
+}
+
+.trilho.dark .indicador{
+    left: 50px;
+    background-color: var(--cinza-escuro-color);
+
+}
+
+.cor-desktop.dark{
+    background-color: var(--fundo-color-dark);
+}
+
+.top-desktop.dark{
+    background-color: var(--top-color-dark);
+}
+
+.passagem.dark{
+    color: var(--top-text-color);
+}
+
+.dark .passagem,
+.dark label {
+    color: var(--top-text-color);}
+
+.dark.botoes-desktop button {
+    background-color: var(--top-color-dark);
+}
+
+.container-desktop.dark{
+    background-image: url(../Imagens/praia_noite.jpg);
+}
+
+
+
+
+
+.container-desktop{
+    background-image: url(../Imagens/nordeste-praias-bonitas.jpg);
+    display: flex;
+    margin-top: 4.5%;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.cor-desktop{
+    width: 450px;
+    height: 90%;
+    background-color: var(--fundo-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.container-desktop input{
+    width: 400px;
+    border-radius: 5px;
+    border: none;
+    height: 40px;
+}
+
+.botoes-desktop{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-pas{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo{
+    height: 100px;
+    width: 100px;
+}
+
+
+.select-desktop{
+    color: var(--cinza-escuro-color);
+    border: none;
+    border-radius: 5px;
+    width: 400px;
+    height: 40px;
+    background-color: var(--top-text-color);
+}
+
+
+@media screen and (min-width: 760px) {
+    .mobile {
+        display: none;
+    }
+
+    .desktop{
+        display: flex;
+    }
+
+    button{
+        font-family: 'Poppins', sans-serif;
+        background-color: var(--top-color);
+        color: var(--top-text-color);
+        border: none;
+        border-radius: 5px;
+        width: 150px;
+        height: 40px;
+    }
+}
+
+h1{
+    margin-bottom: 10px;
+    color: var(--top-color);
+    /* text-align: center; */
+}

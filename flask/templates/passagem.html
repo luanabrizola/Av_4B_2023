@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="imagex/png" href="{{ url_for('static', filename='Imagens/aviao.png') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Cadastro</title>
+</head>
+
+<body>
+
+    <!-- <h1>CADASTRO</h1> -->
+
+    <div class="mobile">
+
+        <div class="menu-icon" onclick="menu()">
+            <img src="{{ url_for('static', filename='Imagens/menu.svg') }}" id="imgMenu" alt="">
+        </div>
+
+        <div class="lista-mobile">
+            <ul>
+                <li><a href="{{ url_for('bd') }}">Banco de Dados</a></li>
+                <li><a href="{{ url_for('alunos') }}">Alunos</a></li>
+                <li><a href="{{ url_for('conceitos') }}">Conceitos</a></li>
+                <li><a href="{{ url_for('cadastro') }}">Cadastro</a></li>
+                <li><a href="{{ url_for('listar_passagens') }}">Listagem</a></li>
+            </ul>
+        </div>
+
+
+        <div class="container-mobile">
+            <div class="cor-mobile">
+                <form id="register-form" method="post" action="{{ url_for('inserir_passagem') }}" >
+                    <div class="logo-pas">
+                        <img class="logo-mobile" src="{{ url_for('static', filename='Imagens/logo1.png') }}" alt="">
+                        <h1>Passagem</h1>
+                    </div>
+
+                    <label>ID Passagem</label><br>
+                    <input type="text" id="idpassagem" name="idpassagem" placeholder="Insira o id da passagem"></input> <br> <br>
+
+                    <label>Duração do voo</label> <br>
+                    <input type="time" name="duracao" placeholder="Insira a duração do voo"></input> <br> <br>
+
+                    <label>Data de embarque</label><br>
+                    <input type="date" name="dataembarque" placeholder="Insira a data do embarque"></input> <br> <br>
+
+                    <label>Data de retorno</label> <br>
+                    <input type="date" name="dataretorno" placeholder="Insira a data de retorno"></input> <br> <br>
+
+                    <label>Destino</label><br>
+                    <select class="select-mobile" name="destino" id="destino">
+                        <option value="1">João Pessoa</option>
+                        <option value="2">São Paulo</option>
+                        <option value="3">Rio de Janeiro</option>
+                        <option value="4">Maceió</option>
+                        <option value="5">Florianópolis</option>
+                        <option value="6">Porto Seguro</option>
+                        <option value="7">Foz do Iguaçu</option>
+                        <option value="10">Bonito</option>
+                        <option value="11">Mateiros</option>
+                        <option value="12">Maringá</option>
+                    </select> <br> <br>
+
+                    <label>Origem</label><br>
+                    <select class="select-mobile" name="origem" id="origem">
+                        <option value="1">João Pessoa</option>
+                        <option value="2">São Paulo</option>
+                        <option value="3">Rio de Janeiro</option>
+                        <option value="4">Maceió</option>
+                        <option value="5">Florianópolis</option>
+                        <option value="6">Porto Seguro</option>
+                        <option value="7">Foz do Iguaçu</option>
+                        <option value="10">Bonito</option>
+                        <option value="11">Mateiros</option>
+                        <option value="12">Maringá</option>
+                    </select>
+                    <br> <br>
+
+                    <label>Classe do voo</label> <br>
+                    <select class="select-mobile" name="classe" id="classe">
+                        <option value="1">Econômica</option>
+                        <option value="2">Premium</option>
+                        <option value="3">Executiva</option>
+                        <option value="4">Primeira Classe</option>
+                    </select> <br> <br>
+                    <div class="botoes-mobile">
+                        <div class="enviar-mobile"><button  onclick="validaRegisterForm()" type="">Enviar</button></div>
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="desktop">
+        <div class="top-desktop">
+            <ul>
+                <li><a href="{{ url_for('bd') }}">Banco de Dados</a></li>
+                <li><a href="{{ url_for('alunos') }}">Alunos</a></li>
+                <li><a href="{{ url_for('conceitos') }}">Conceitos</a></li>
+                <li><a href="{{ url_for('cadastro') }}">Cadastro</a></li>
+                <li><a href="{{ url_for('listar_passagens') }}">Listagem</a></li>
+                <div class="trilho" id="trilho">
+                    <div class="indicador"></div>
+                </div>
+            </ul>
+        </div>
+
+
+        <div class="container-desktop">
+            <div class="cor-desktop">
+                <form id="register-form" method="post" action="{{ url_for('inserir_passagem') }}" >
+                    <div class="logo-pas">
+                        <img class="logo" src="{{ url_for('static', filename='Imagens/logo1.png') }}" alt="">
+                        <h1>Passagem</h1>
+                    </div>
+
+                    <label>ID Passagem</label><br>
+                    <input type="text" name="idpassagem" placeholder="Insira o id da passagem"></input> <br> <br>
+
+                    <label>Duração do voo</label> <br>
+                    <input type="time" name="duracao" placeholder="Insira a duração do voo"></input> <br> <br>
+
+                    <label>Data de embarque</label><br>
+                    <input type="date" name="dataembarque" placeholder="Insira a data do embarque"></input> <br> <br>
+
+                    <label>Data de retorno</label> <br>
+                    <input type="date" name="dataretorno" placeholder="Insira a data de retorno"></input> <br> <br>
+
+                    <label>Destino</label><br>
+                    <select class="select-desktop" name="destino" id="destino">
+                        <option value="1">João Pessoa</option>
+                        <option value="2">São Paulo</option>
+                        <option value="3">Rio de Janeiro</option>
+                        <option value="4">Maceió</option>
+                        <option value="5">Florianópolis</option>
+                        <option value="6">Porto Seguro</option>
+                        <option value="7">Foz do Iguaçu</option>
+                        <option value="10">Bonito</option>
+                        <option value="11">Mateiros</option>
+                        <option value="12">Maringá</option>
+                    </select> <br> <br>
+
+
+                    <label>Origem</label> <br>
+                    <select class="select-desktop" name="origem" id="origem">
+                        <option value="1">João Pessoa</option>
+                        <option value="2">São Paulo</option>
+                        <option value="3">Rio de Janeiro</option>
+                        <option value="4">Maceió</option>
+                        <option value="5">Florianópolis</option>
+                        <option value="6">Porto Seguro</option>
+                        <option value="7">Foz do Iguaçu</option>
+                        <option value="10">Bonito</option>
+                        <option value="11">Mateiros</option>
+                        <option value="12">Maringá</option>
+                    </select>
+                    <br> <br>
+
+                    <label>Classe do voo</label> <br>
+                    <select class="select-desktop" name="classe" id="classe">
+                        <option value="1">Econômica</option>
+                        <option value="2">Premium</option>
+                        <option value="3">Executiva</option>
+                        <option value="4">Primeira Classe</option>
+                    </select> <br> <br>
+
+                    
+                    <div class="enviar-desktop"><button  onclick="validaRegisterForm()"  type="submit">Enviar</button></div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

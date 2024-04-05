@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bd.css">
+    <script src="./bd.js" defer></script>
+    <title>Banco De Dados</title>
+</head>
+
+<body>
+    <div class="mobile">
+        <div class="menu-mobile">
+            <div class="menu-icon" onclick="menu()">
+                <img src="../Imagens/menu.svg" id="imgMenu" alt="">
+            </div>
+    
+            <div class="lista-mobile">
+                <ul>
+                    <li><a href="../Banco de dados/bd.html">Banco de Dados</a></li>
+                    <li><a href="../Alunos/alunos.html">Alunos</a></li>
+                    <li><a href="../Conceitos/conceitos.html">Conceitos</a></li>
+                    <li><a href="../Cadastro/index.html">Cadastro</a></li>
+                    <li><a href="../Listagem/listagem.html">Listagem</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <br>
+        <br>
+        <div class="content-mobile">
+            <h1>Banco de Dados</h1>
+            <p>Nosso banco de dados é relacionado a uma agência de viagens, onde o usuário consegue comprar sua
+                passagem,
+                escolhendo a data de ida e volta, a classe e o destino da mesma. É um banco de dados bem estruturado em
+                questão de Modelo Relacional, contendo, dentro das tabelas, chaves
+                primarias e chaves estrangeiras das quais fazem a relação entre as tabelas, além de garantir as relações
+                entre as tabelas, nossas chaves estrangeiras auxiliam a manter a consistencia dos dados. Uma
+                consideração importante a ser feitar é a implementação de índices para otimizar consultas e a
+                documentação abrangente para guiar o desenvolvimento e a manutenção futuros do sistema. </p>
+
+        </div>
+
+        <h1 class="tabelas-mobile">
+            Tabelas Principais
+        </h1>
+
+        <div class="container-mobile">
+            <div class="user">
+                <h1>Usuário</h1>
+                <p>Armazena informações sobre os usuários, como CPF, nome, e-mail e senha</p>
+            </div>
+    
+            <div class="cidade">
+                <h1>Cidades</h1>
+                <p>Armazena dados sobre cidades, incluindo uma chave estrangeira para o estado ao qual pertencem.</p>
+            </div>
+            
+            <div class="passagem">
+                <h1>Passagens</h1>
+                <p>Registra dados sobre passagens aéreas, incluindo datas, origens, destinos, duração, companhia aérea,
+                    quantidade de pessoas e classe de voo.</p>
+            </div>
+
+            <div class="destino">
+                <h1>Destinos</h1>
+                <p>Armazena detalhes sobre destinos turísticos, com uma chave estrangeira para a cidade associada.</p>
+            </div>
+
+        </div>
+
+        <img class="logo-mobile" src="../Imagens/logo1.png" alt="">
+
+    </div>
+
+    <div class="desktop">
+        <div class="top-desktop">
+            <ul>
+                <li><a href="../Banco de dados/bd.html">Banco de Dados</a></li>
+                <li><a href="../Alunos/alunos.html">Alunos</a></li>
+                <li><a href="../Conceitos/conceitos.html">Conceitos</a></li>
+                <li><a href="../Cadastro/index.html">Cadastro</a></li>
+                <li><a href="../Listagem/listagem.html">Listagem</a></li>
+
+            </ul>
+
+        </div>
+
+        <br>
+        <br>
+        <div class="content-desktop">
+            <h1>Banco de Dados</h1>
+            <p>Nosso banco de dados é relacionado a uma agência de viagens, onde o usuário consegue comprar sua
+                passagem,
+                escolhendo a data de ida e volta, a classe e o destino da mesma. É um banco de dados bem estruturado em
+                questão de Modelo Relacional, contendo, dentro das tabelas, chaves
+                primarias e chaves estrangeiras das quais fazem a relação entre as tabelas, além de garantir as relações
+                entre as tabelas, nossas chaves estrangeiras auxiliam a manter a consistencia dos dados. Uma
+                consideração importante a ser feitar é a implementação de índices para otimizar consultas e a
+                documentação abrangente para guiar o desenvolvimento e a manutenção futuros do sistema. </p>
+
+        </div>
+
+        <h1 class="tabelas-desktop">
+            Tabelas Principais
+        </h1>
+
+        <div class="container-desktop">
+
+            <div class="">
+                <h1>Usuário</h1>
+                <p>Armazena informações sobre os usuários, como CPF, nome, e-mail e senha</p>
+            </div>
+
+            <div class="">
+                <h1>Cidades</h1>
+                <p>Armazena dados sobre cidades, incluindo uma chave estrangeira para o estado ao qual pertencem.</p>
+            </div>
+
+            <div class="">
+                <h1>Passagens</h1>
+                <p>Registra dados sobre passagens aéreas, incluindo datas, origens, destinos, duração, companhia aérea,
+                    quantidade de pessoas e classe de voo.</p>
+            </div>
+
+            <div class="">
+                <h1>Destinos</h1>
+                <p>Armazena detalhes sobre destinos turísticos, com uma chave estrangeira para a cidade associada.</p>
+            </div>
+
+        </div>
+
+        <img class="logo-desktop" src="../Imagens/logo1.png" alt="">
+
+
+
+
+    </div>
